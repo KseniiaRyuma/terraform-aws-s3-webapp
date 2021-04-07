@@ -31,6 +31,10 @@ EOF
 
   }
   force_destroy = true
+  
+  tags = {
+    hc-internet-facing = true
+  }
 }
 
 resource "aws_s3_bucket_object" "webapp" {
